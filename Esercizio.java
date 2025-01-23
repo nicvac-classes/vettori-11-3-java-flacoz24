@@ -1,26 +1,65 @@
-//LEGGERE LE ISTRUZIONI NEL FILE README.md
+import java.util.*;
+import java.lang.Math;
 
-//Import di Classi Java necessarie al funzionamento del programma
-import java.util.Scanner;
+class Program {
+    private static Scanner input = new Scanner(System.in);
 
-// Classe principale, con metodo main
-class Esercizio {
-    // Il programma parte con una chiamata a main().
-    public static void main(String args[])
-    {
-        //Variabili del programma
-        String nome;
+    public static void main(String[] args) {
+        int n;
 
-        //Creo l'oggetto in per l'input da tastiera
-        Scanner in = new Scanner( System.in );
+        System.out.println("inserire grandezza del vettore");
+        n = input.nextInt();
+        int[] v = new int[n];
 
-        //Leggo l'input da tastiera
-        System.out.print("Inserisci il tuo nome: ");
-        nome = in.nextLine();
+        for (i = 0; i <= n - 1; i++) {
+            v[i] = 0;
+        }
+        System.out.println("ciao e benvenuto nel menù dove puoi gestire i vettori ecco le seguenti istruzioni");
+        while (a != x) {
+            System.out.println("inserire(in)/ elimina(el)/ ricerca(ri)/ elimina duplicati(ed)/ visualizza(vi)/ esci(x)");
+            a = input.nextLine();
+            if (a == "in") {
+                inserisci();
+                if (a == "el") {
+                    elimina();
+                    if (a == "ri") {
+                        ricerca();
+                        if (a == "ed") {
+                            eliminaDuplicati();
+                            if (a == "vi") {
+                                Visualizza(v, n);
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    
+    public static void elimina(int valore, int posizione) {
+        System.out.println("funziona");
+    }
+    
+    public static void eliminaDuplicati(int valore, int posizione) {
+        System.out.println("funziona");
+    }
+    
+    public static void inserisci(int valore, int posizione) {
+        System.out.println("funzione");
+    }
+    
+    public static void ricerca(int valore, int posizione) {
+        System.out.println("funziona");
+    }
+    
+    public static int trovaIlVettore(int[] v, int valore) {
+        int i;
 
-        //Output del nome acquisito da tastiera
-        System.out.println("Ciao "+nome+"!");
+        System.out.println("vedere visualizzato");
+        for (i = 0; i <= N - 1; i++) {
+            System.out.println(v[i]);
+        }
+        
+        return i;
     }
 }
-
-//LEGGERE LE ISTRUZIONI NEL FILE README.md
